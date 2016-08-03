@@ -4,9 +4,9 @@ The Chess Program project is an implementation of a fully-functioning two-player
 The program was written in pure C, using the SDL framework for graphics.
 
 The program has two modes:
-graphical mode (Gui mode) - The graphical mode presents the user with visual menus and controls enabling the user to play Chess, choose the game’s players (user or AI),
-and set the game’s difficulty.
-Console mode - The console mode will operate in a similar way to the description in file ex3.pdf .
+1. graphical mode (Gui mode) - The graphical mode presents the user with visual menus and controls enabling the user to play Chess, choose the game’s players (user or AI), and set the game’s difficulty.
+2. 2. Console mode - The console mode will operate in a similar way to the description in file ex3.pdf under 'readme'.
+
 For AI, the Minimax algorithm is used, with pruning to improve its efficiency.
 
 
