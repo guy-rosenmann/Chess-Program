@@ -1,6 +1,7 @@
 # Chess-Program
 
 The Chess Program project is an implementation of a fully-functioning two-player Chess game.
+
 The program was written in pure C, using the SDL framework for graphics.
 
 The program has two modes:
