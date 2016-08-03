@@ -1,0 +1,65 @@
+# SDL and SDL_image functions
+{
+   SDL_VideoInit leak
+   Memcheck:Leak
+   ...
+   fun:SDL_VideoInit
+}
+{
+   SDL_image Cond
+   Memcheck:Cond
+   ...
+   fun:IMG_LoadTyped_RW
+}
+{
+   SDL_PollEvent Cond
+   Memcheck:Cond
+   ...
+   fun:SDL_PollEvent
+}
+
+
+
+# X11 functions (called from SDL or SDL_image)
+{
+   XGetDefault leak
+   Memcheck:Leak
+   ...
+   fun:XGetDefault
+}
+{
+   _XOpenLC leak
+   Memcheck:Leak
+   ...
+   fun:_XOpenLC
+}
+{
+   XCreatePixmap leak
+   Memcheck:Leak
+   ...
+   fun:XCreatePixmap
+}
+{
+   _XNoticeCreateBitmap leak
+   Memcheck:Leak
+   ...
+   fun:_XNoticeCreateBitmap
+}
+
+
+
+# For valgrind leaks caused by SDL
+{
+   libdl
+   Memcheck:Leak
+   ...
+   fun:_dl_init
+   ...
+}
+{
+   libdl
+   Memcheck:Leak
+   ...
+   fun:_dl_open
+   ...
+}
