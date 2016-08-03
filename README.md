@@ -1,4 +1,5 @@
 # Chess-Program
+Course: Software Project, Spring 2014, Tel-Aviv University
 
 The Chess Program project is an implementation of a fully-functioning two-player Chess game.
 
